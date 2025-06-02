@@ -2,16 +2,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
-        double km, miles;
+        double number, result;
 
-        System.out.println("Digite a distancia em milhas: ");
+        System.out.println("Digite um número: ");
 
-        Scanner in = new Scanner(System.in);
-        km = in.nextDouble();
+        Scanner in = new Scanner(System.in); // Configura o Scanner
+        number = in.nextDouble();
 
-        miles = km / 1.6;
-        System.out.println(km + "km = "+ miles" + miles");
+        result = number * 1.6;
+        System.out.println("O resultado de " + number + " milhas em km é: " + (number*1.6));
     }
     }
 }
