@@ -13,4 +13,3 @@ public class Main {
         System.out.println("Se raio é igual a " + number + " a área é: " + (Math.PI*(Math.pow(number, number))));
     }
 }
-

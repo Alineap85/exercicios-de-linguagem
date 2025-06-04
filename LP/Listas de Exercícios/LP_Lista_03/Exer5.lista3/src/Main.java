@@ -2,24 +2,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double n1, n2, media;
+        double n1, n2, mean;
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Digite nota 1");
+        System.out.println("Enter grade 1: ");
         n1 = in.nextDouble();
 
-        System.out.println("Digite nota 2");
+        System.out.println("Enter grade 2: ");
         n2 = in.nextDouble();
 
-        media = (n1+n2)/2;
-        System.out.println("A média é " + media);
+        mean = (n1+n2)/2;
+        System.out.println("Mean is: " + mean);
 
-        if(media>=8.5 )
+        if(mean>=8.5)
             System.out.println("A");
-        else if(media>=7)
+        else if(mean>=7)
             System.out.println("B");
-        else if(media>=5)
+        else if(mean>=5)
             System.out.println("C");
         else
             System.out.println("D");
+    }
+}

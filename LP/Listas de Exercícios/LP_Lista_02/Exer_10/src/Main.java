@@ -12,5 +12,4 @@ public class Main {
         result = number * 1.6;
         System.out.println("O resultado de " + number + " milhas em km é: " + (number*1.6));
     }
-    }
 }

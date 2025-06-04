@@ -5,7 +5,7 @@ public class Main {
 
         double number1, number2, result;
 
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in); // Configura o Scanner
 
         System.out.println("Digite N1: ");
         number1 = in.nextDouble();
@@ -14,7 +14,6 @@ public class Main {
         number2 = in.nextDouble();
 
         result = (number1 + number2) / 2;
-        System.out.println("Sendo N1 " + number1 + " e N2 " + number2 + " a média é igual a: " + ((number1+number2) / 2);
-
+        System.out.println("Sendo N1 " + number1 + " e N2 " + number2 + " a média é igual a: " + ((number1 +number2) / 2));
     }
 }

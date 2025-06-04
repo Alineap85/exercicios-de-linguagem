@@ -6,30 +6,30 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Digite nota 1: ");
+        System.out.println("Enter grade number 1: ");
         n1 = in.nextDouble();
 
-        System.out.println("Digite nota 2: ");
+        System.out.println("Enter grade number 2: ");
         n2 = in.nextDouble();
 
         mean = (n1+n2)/2;
-        System.out.println("A média é: " + mean);
+        System.out.println("Mean is: " + mean);
 
         if(mean>=50){
-            System.out.println("Aprovado");
+            System.out.println("Approved");
         }
         else{
-            System.out.println("Digite a nota da recuperação: ");
+            System.out.println("Enter recovery grade: ");
             rec = in.nextDouble();
 
             mean = (mean + rec)/2;
-            System.out.println("A nova média é: " + mean);
+            System.out.println("New mean is: " + mean);
 
             if(mean<50)
-                System.out.println("Reprovado");
+                System.out.println("Not approved");
             else
-                System.out.println("Aprovado");
+                System.out.println("Approved");
         }
 
     }
-}}
+}

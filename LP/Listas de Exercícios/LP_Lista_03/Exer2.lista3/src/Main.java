@@ -6,7 +6,7 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Digite os números separados por espaço: ");
+        System.out.println("Enter your numbers by space: ");
         n1 = in.nextInt();
         n2 = in.nextInt();
 
@@ -16,7 +16,5 @@ public class Main {
             System.out.println(n1 + " < " + n2);
         else
             System.out.println(n1 + " = " + n2);
-    }
-}]
     }
 }

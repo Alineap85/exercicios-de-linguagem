@@ -1,25 +1,25 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int n;
+        int x, y;
 
-        scanner in = new scanner(System.in);
-        do {
-            System.out.println("Digite um numero inteiro maior que zero");
-            n = in.nextInt();
-        } while (n <= 0);
+        Scanner in = new Scanner(System.in);
 
-        System.out.println(n + " ! = " + Fatorial (n));
+        System.out.println("Enter X: ");
+        x = in.nextInt();
 
+        do{
+            System.out.println("Enter Y: ");
+            y = in.nextInt();
+        }
+        while (y<0);
+        System.out.println(x + "^" + y + " = " + powerNumber(x, y));
     }
 
-    Public static int fatorial(int n){
 
-    int fatorial(int n) {
-        int fatorial = 1;
-        for (int i = n;>1;
-        i--){
-            fatorial *= i;
-        }
-        return fatorial
+    public static int powerNumber (int x, int y) {
+        return y==0? 1 : x*powerNumber(x, y-1);
+
     }
 }
