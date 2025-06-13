@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        //OPÇÃO 1
+
         int max1 =0, min1 =0;
 
         Scanner in = new Scanner(System.in);
 
-        for(int i=1; i<=5; i++) { //++ é sempre +1
+        for(int i=1; i<=5; i++) {
             System.out.println("Enter " + i + "° number: ");
             int temp = in.nextInt();
 
@@ -30,12 +30,12 @@ public class Main {
 
 
 
-        //OPÇÃO 2
-        int maior2=Integer.MIN_VALUE ,menor2=Integer.MAX_VALUE;
+
+        int maior2=Integer.MIN_VALUE, menor2=Integer.MAX_VALUE;
 
         Scanner in2 = new Scanner(System.in);
 
-        for(int i=1; i<=5; i++) { //++ é sempre +1
+        for(int i=1; i<=5; i++) {
             System.out.println("Enter " + i + "° number: ");
             int temp = in.nextInt();
 

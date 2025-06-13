@@ -1,24 +1,35 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int a,b,c;
+        double a, b, c;
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Digite os três lados do triângulo separados por espaço:");
-        a = in.nextInt();
-        b = in.nextInt();
-        c = in.nextInt();
 
-        if(a<(b+c) && a>Math.abs(b-c) && b<(a+c) && b>Math.abs(a-c)&& c<(b+a) && c>Math.abs(a-b)){
-            System.out.println("a, b e c formam um triângulo.");
-            if(a==b && a==c)
-                System.out.println("Triângulo equilátero.");
-            else if (a==b || b==c || a==c)
-                System.out.println("Triângulo Isóceles");
+        System.out.println("Enter 3 sides for triangle: ");
+        a = in.nextDouble();
+        b = in.nextDouble();
+        c = in.nextDouble();
+
+        if (a+b>c && a+c>b && b+c>a) {
+            System.out.print("It is...");
+
+            if (a==b && b==c)
+                System.out.println(" equilateral");
+
+            else if (a==b || a==c || b==c)
+                System.out.println(" isosceles");
+
             else
-                System.out.println("Triângulo Escaleno");
-        }else{
-            System.out.println("a, b e c NÃO formam um triângulo.");
+                System.out.println(" scalene");
         }
+
+        else
+            System.out.println("Not possible to draw a triangle");
+
+        in.close();
+    }
+}

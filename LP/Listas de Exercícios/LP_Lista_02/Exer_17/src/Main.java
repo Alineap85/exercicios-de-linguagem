@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Digite a aceleração: ");
         System.out.println("Digite o  tempo de percurso");
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
         number1 = in.nextInt();
         number2 = in.nextInt();
         number3 = in.nextInt();

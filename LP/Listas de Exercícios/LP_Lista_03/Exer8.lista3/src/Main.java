@@ -10,8 +10,8 @@ public class Main {
         n1 = in.nextDouble();
 
         if(n1%2==0)
-            System.out.println("Even"); //par
+            System.out.println("Even");
         else
-            System.out.println("Odd"); //ímpar
+            System.out.println("Odd");
     }
 }

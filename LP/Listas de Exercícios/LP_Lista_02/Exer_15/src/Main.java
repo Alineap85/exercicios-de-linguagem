@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         double number1, number2, result;
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
 
         System.out.println("Digite o raio: ");
         number1 = in.nextDouble();

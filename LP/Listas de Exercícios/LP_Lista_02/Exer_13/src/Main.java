@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("Digite o raio: ");
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
         number = in.nextDouble();
 
         result = (Math.PI*Math.pow(number, number));

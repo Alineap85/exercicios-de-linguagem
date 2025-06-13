@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("Digite um núemro: ");
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
         number = in.nextDouble();
 
         result = number * 25.4;

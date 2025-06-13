@@ -5,7 +5,7 @@ public class Main {
 
         double number1, number2, result;
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
 
         System.out.println("Digite N1: ");
         number1 = in.nextDouble();
