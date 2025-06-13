@@ -1,0 +1,12 @@
+flowchart TD
+    A((Início)) --> B[\digite o numero n\]
+     B --> C{n >= 0?}
+     C -- Não --> D[\Número inválido\]
+     C -- Sim --> E[\Inicializar fatorial = 1\]
+     E --> F{n > 0?}
+     F -- Sim --> G[\fatorial = fatorial * n\]
+     G --> H[\n = n - 1\]
+     H --> F
+     F -- Não --> I[\Exibir Fatorial = fatorial\]
+     D --> J((fim))
+     I --> J

@@ -1,0 +1,6 @@
+flowchart TD
+   A((Inicio)) --> input[\Digite sua Idade\]
+   input --> verification{ Idade >= 16 E Titulo ? }
+     verification --> |Sim| B[/ Vota /]
+     verification --> |Não| C[/ Não Vota /]
+    finish([ Fim ])

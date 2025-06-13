@@ -1,0 +1,7 @@
+flowchart TD
+   C((Inicio)) --> D[\Digite N0\]
+   D --> verification{ Valor >= 0? }
+     verification --> |Sim| A[/ Positivo /]
+     verification --> |Não| B[/ Negativo /]
+     A --> finish([ Fim ])
+     B --> finish

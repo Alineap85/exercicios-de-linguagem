@@ -1,0 +1,13 @@
+flowchart TD
+   A((Início)) --> B[\número 1\]
+     B --> C[\número 2\]
+     C --> D{Número 1 > Número 2?}
+     D -- Sim --> E[\Exibir 'Número 1 é o maior'\]
+     D -- Não --> F{Número 1 < Número 2?}
+     F -- Sim --> G[\Exibir 'Número 2 é o maior'\]
+     F -- Não --> H[\Exibir 'Os números são iguais'\]
+     E --> I[Fim]
+     G --> I
+     H --> I
+     
+l

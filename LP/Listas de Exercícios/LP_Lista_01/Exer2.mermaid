@@ -1,0 +1,8 @@
+flowchart TD
+   start((Inicio)) --> input1[\Digite sua Nota - Valor entre 0 e 100\]
+   input1 --> input2{\Digite a frequência>= 75%\}
+   input2 --> verification{Nota>=50 \n E \n Frequencia>= 75}
+   verification --> |Sim| A[/Aprovado/]
+   verification --> |Não| B[/Reprovado/]
+   A --> finish([ Fim ])
+   B --> finish

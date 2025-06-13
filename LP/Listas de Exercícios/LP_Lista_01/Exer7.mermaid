@@ -1,0 +1,11 @@
+flowchart TD
+   A((Início)) --> B[\Digite o N1\]
+     B --> C[\Digite o  N2\]
+     C --> D[\Digite o N3\]
+     D --> E{N1>N2}
+     E -->|SIM| F{N1>N3} 
+     E --> |NAO| G{N2>N3}
+     F --> |SIM| H[\ N1 E O MAIOR\]
+     F --> |NAO| I{N3==N1 \N OU \N N3==N2}
+     G --> |SIM| J[\ N2 E O MAIOR\]
+     G --> |NAO| l{Voce digitou alguns numeros iguais}

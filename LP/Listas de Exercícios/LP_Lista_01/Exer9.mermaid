@@ -1,0 +1,7 @@
+flowchart TD
+    A((Início)) --> B[Digite um número]
+     B --> C{Número % 2 = 0?}
+     C -- Sim --> D[\'O número é par'\]
+     C -- Não --> E[\ 'O número é ímpar'\]
+     D --> F((fim))
+  E --> F

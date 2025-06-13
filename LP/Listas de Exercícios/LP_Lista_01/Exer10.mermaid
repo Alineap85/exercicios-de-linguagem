@@ -1,0 +1,12 @@
+flowchart TD
+   A((Início)) --> B[\Digite um número n\]
+     B --> C{n <= 1?}
+     C -- Sim --> D[\O número não é primo\]
+     C -- Não --> E[\Iniciar divisor = 2\]
+     E --> F{divisor < n?}
+     F -- Sim --> G{n % divisor == 0?}
+     G -- Sim --> H[\O número não é primo\]
+     G -- Não --> I[\Incrementar divisor\]
+     I --> F
+     F -- Não --> J[\O número é primo\]
+     D --> K((fim))
